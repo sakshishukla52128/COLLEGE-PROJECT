@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Logo Carousel</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* Light background for contrast */
+        }
+
+        .logo-carousel {
+            position: relative;
+            width: 90%; /* Adjusted width for a narrower carousel */
+            max-width: 1200px; /* Maximum width for larger screens */
+            height: 180px; /* Reduced height for the carousel */
+            overflow: hidden;
+            background: linear-gradient(135deg, #fff, #fff); /* Gradient background */
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+            margin: 20px auto; /* Centered carousel with space above and below */
+            border-radius: 25px; /* Rounded corners for carousel */
+            padding: 10px 0; /* Padding for spacing */
+        }
+
+        .logo-container {
+            display: flex;
+            white-space: nowrap;
+            animation: scroll 10s linear infinite; /* Continuous scroll with a 10s cycle */
+        }
+
+        .logo-container img {
+            height: 120px; /* Height of logos */
+            margin: 0 20px; /* Increased space between logos */
+            /border: 3px solid #ffffff; / Thicker white border for visibility */
+            border-radius: 25px; /* More rounded corners for logos */
+            opacity: 0.9;
+            transition: opacity 5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: transparent; /* Added this line */
+        }
+
+        .logo-container img:hover {
+            opacity: 1;
+            transform: scale(1.1); /* Slight zoom effect on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .logo-carousel {
+                height: 150px; /* Adjust height for smaller screens */
+                width: 95%; /* Increase width for smaller screens */
+            }
+
+            .logo-container img {
+                height: 80px; /* Adjust logo height for smaller screens */
+                margin: 0 15px; /* Reduce space between logos */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-carousel">
+        <div class="logo-container">
+            <!-- Repeat logos to ensure continuous scroll -->
+            <img src="image copy 2.png" alt="IBM Logo">
+            <img src="image copy.png" alt="Placement Agency Logo">
+            <img src="s.png" alt="Contest Logo">
+            <img src="1.png" alt="Encrypted Logo">
+            <img src="image copy.png" alt="Shutterstock Logo">
+            <img src="google.png" alt="">
+            <!-- Repeat the logos again -->
+            <img src="image copy 3.png" alt="IBM Logo">
+            <img src="image copy.png" alt="Placement Agency Logo">
+            <img src="s.png" alt="Contest Logo">
+            <img src="1.png" alt="Encrypted Logo">
+            <img src="image copy.png" alt="Shutterstock Logo">
+            <img src="google.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

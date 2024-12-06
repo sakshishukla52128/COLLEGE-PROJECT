@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Cell</title>
+    <link rel="stylesheet" href="home copy.css">
+</head>
+<div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="my.png" alt="" style="height: 60px;width: 60px;">
+                <a href="#" class="nav-logo">PlacementCell</a>
+            </div>
+
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-main">
+            <div class="singup_login">
+                <a href="loginsignup.html" class="btn btn-primary">Signup</a>
+                <a href="#" class="btn btn-secondary">Login</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Companies <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Registered Companies</a></li>
+                        <li><a href="#">Past Recruiters</a></li>
+                        <li><a href="#">Company Registration</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Students <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Student Profiles</a></li>
+                        <li><a href="#">Placement Statistics</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Jobs <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Current Openings</a></li>
+                        <li><a href="#">Past Placements</a></li>
+                        <li><a href="#">Interview Preparation</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Resources <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Resume Templates</a></li>
+                        <li><a href="#">Interview Tips</a></li>
+                        <li><a href="#">Placement Guidelines</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item notification">
+                    <a href="#" class="nav-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="hero" style="display: flex;height: 100vh;">
+            <div class="content">
+                <h1>Empowering The Next Generation Of Leaders</h1>
+                <p>Unlock Your Full Potential. Take the First Step Towards Success.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="top-recruiters">
+                <img class="student1" src="student1.png" alt="">
+                <img class="student2" src="student3.png" alt="">
+                <img class="student3" src="student2.png" alt="">
+            
+            </div>
+        </div>
+    </section>
+    <section class="about">
+
+    </section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Btdc Project</title> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1 {
+            background: #00004d;
+            width: 70%;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container2 {
+            animation: appear 1s ease-in-out;
+        }
+
+        .quote-section, .vision-section {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            color: #00004d;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 2px solid #00004d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .quote-section:hover, .vision-section:hover {
+            transform: scale(1.05);
+        }
+
+        .quote-section img, .vision-section img {
+            max-width: 180px;
+            border-radius: 8px;
+        }
+
+        .quote-section img {
+            margin-right: 20px;
+        }
+
+        .vision-section img {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+
+        .quote-section p, .vision-section p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left; /* Align text to the left for better readability */
+        }
+
+        .quote-section p span, .vision-section p span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #001860;
+        }
+
+        h1 {
+            color: whitesmoke;
+            font-weight: 900;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container1 {
+                width: 90%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            .quote-section, .vision-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center; /* Center text for smaller screens */
+            }
+
+            .quote-section img, .vision-section img {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+
+            .vision-section img {
+                margin-left: 0;
+            }
+
+            .quote-section p, .vision-section p {
+                font-size: 16px;
+            }
+
+            .quote-section p span, .vision-section p span {
+                font-size: 18px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .container1 {
+                width: 95%;
+                margin: 10px auto;
+                padding: 10px;
+            }
+
+            .quote-section, .vision-section {
+                padding: 10px;
+            }
+
+            .quote-section img, .vision-section img {
+                margin: 5px 0;
+            }
+
+            .quote-section p, .vision-section p {
+                font-size: 14px;
+            }
+
+            .quote-section p span, .vision-section p span {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <h1>About Us</h1>
+        <!-- Quote Section -->
+        <div class="quote-section">
+            <img src="principal.png" alt="Dr. Aruna Singham">
+            <p>
+                "We want that education by which character is formed, strength of mind is increased, the intellect is expanded, and by which one can stand on one's own feet” 
+                <span>-Dr. Aruna Singham</span>
+            </p>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="vision-section">
+            <p style="text-align: right;"> <!-- Align text to the right for rtl direction -->
+                Our vision is to create a community of learners who are curious, creative, and courageous; who are equipped to navigate the complexities 
+                of the world and to make a positive difference in the lives of others. 
+                <span>Atul Sir-</span>
+            </p>
+            <img src="atulsir.jpg" alt="Atul Sir">
+        </div>
+    </div>
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Timeline</title>
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+    
+        body {   
+            background: rgb(13, 7, 7); /* Page background color */
+            color: rgb(255, 255, 255); /* Default text color */
+        }
+    
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+    
+        .timeline::after {
+            content: '';
+            /* color: black; */
+            position: absolute;
+            width: 16px;
+            background: whitesmoke; /* Timeline line color */
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%); /* Center the line */
+            height: 100vh; /* Full viewport height */
+            z-index: -1;
+        }
+    
+        .container {
+            padding: 10px 50px;
+            position: relative;
+            width: 50%;
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 35%;
+        }
+    
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    
+        .text-box {
+            padding: 20px 30px;
+            background: #00004d; /* Dark background color for text boxes */
+            color: whitesmoke; /* Text color inside the box */
+            position: relative;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+    
+        .container h1 {
+            color: black;
+        }
+    
+        .text-box big, 
+        .text-box p {
+            color: whitesmoke;  
+        }
+    
+        .left-container {
+            left: 0;
+        }
+    
+        .right-container {
+            left: 49%;
+        }
+    
+        .text-box big {
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    
+        .left-container-arrow {
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid #00004d; /* Arrow color */
+            right: -15px;
+        }
+    
+        .right-container-arrow {
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid #00004d; /* Arrow color */
+            left: -15px;
+        }
+    
+        @media screen and (max-width: 600px) {
+            .timeline {
+                margin: 50px auto;
+            }
+            .timeline::after {
+                left: 31px;
+                height: auto; /* Adjust height for smaller screens */
+            }
+            .container {
+                width: 100%;
+                padding-left: 80px;
+                padding-right: 25px;
+            }
+            .text-box {
+                font-size: 13px;
+            }
+            .text-box big {
+                margin-bottom: 10px;
+            }
+            .right-container {
+                left: 0;
+            }
+            .left-container-arrow, .right-container-arrow {
+                border-right: 15px solid #00004d;
+                border-left: 0;
+                left: -15px;
+            }
+        }
+      </style>
+    </head>
+    <body>
+        <div class="timeline">
+          <div class="container left-container">
+            <h1>Step 1</h1><br>
+            <div class="text-box">
+              <big><b>Student Admission</b></big>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, temporibus.</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+    
+          <div class="container right-container">
+            <h1>Step 2</h1><br>
+            <div class="text-box">
+              <big><b>Placement Orientation</b></big>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, temporibus.</p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+    
+          <div class="container left-container">
+            <h1>Step 3</h1><br>
+            <div class="text-box">
+              <big><b>Mock Interview</b></big>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, temporibus.</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+    
+          <div class="container right-container">
+            <h1>Step 4</h1><br>
+            <div class="text-box">
+              <big><b>Mock Session with Experts</b></big>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, temporibus.</p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+    
+          <div class="container left-container">
+            <h1>Step 5</h1><br>
+            <div class="text-box">
+              <big><b>Shortlisting</b></big>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, temporibus.</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+    
+          <div class="container right-container">
+            <h1>Step 6</h1><br>
+            <div class="text-box">
+              <big><b>On Campus Drive</b></big>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, temporibus.</p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+    
+          <div class="container left-container">
+            <h1>Step 7</h1><br>
+            <div class="text-box">
+              <big><b>Final Interview</b></big>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, temporibus.</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+    
+          <div class="container right-container">
+            <h1>Step 8</h1><br>
+            <div class="text-box">
+              <big><b>Selection</b></big>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, temporibus.</p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+        </div>
+    </body>
+    </html>
+    
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Footer with Paper Pop Effects</title>
+        <link rel="stylesheet" href="footer.css">
+    </head>
+    <body class="footer-body">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-column footer-contact">
+                    <h2 class="footer-heading">Contact Us</h2>
+                    <p><i class="fa fa-map-marker-alt"></i> Bhavna Trust Junior & Degree College of Commerce & Science</p>
+                    <p>Plot No. 5, Sunder Baug, Raje Shivaji Chowk, V.N.Purav Marg, Deonar - Chembur, Mumbai-400 088, Maharashtra</p>
+                    <p><i class="fa fa-phone"></i> 022-25518649, 022-25484950</p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:bhavna.trust5333@gmail.com">bhavna.trust5333@gmail.com</a></p>
+                </div>
+                
+                <div class="footer-column footer-links">
+                    <h2 class="footer-heading">Important Links</h2>
+                    <ul class="footer-list">
+                        <li><i class="fa fa-university"></i> <a href="#">University of Mumbai</a></li>
+                        <li><i class="fa fa-graduation-cap"></i> <a href="#">Scholarship/Freeship</a></li>
+                        <li><i class="fa fa-share-alt"></i> <a href="#">SWAYAM</a></li>
+                        <li><i class="fa fa-university"></i> <a href="#">UGC</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column footer-quick-links">
+                    <h2 class="footer-heading">Quick Links</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Program</a></li>
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="#">Apply</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Use</a> |
+                <a href="#">Cookie Policy</a> |
+                <a href="#">Security</a>
+            </div>
+        </footer>
+    </body>
+    </html>
+    
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        .container3 {
+            display: flex;
+            width: 96%;
+            justify-content: space-between; /* Distribute space between cards */
+            align-items: center;
+            background: #00004d;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+        }
+
+        .card {
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 10px;
+            background: #090969;
+            flex: 1 1 200px; /* Flexible width for cards with a minimum of 200px */
+            max-width: 400px;
+            min-width: 200px;
+        }
+
+        .icon {
+            font-size: 60px;
+            margin-bottom: 10px;
+            color: whitesmoke;
+        }
+
+        .number {
+            color: whitesmoke;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: all 1s;
+        }
+
+        .text {
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .description {
+            text-align: center;
+            margin: 50px 20px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media screen and (max-width: 568px) {
+            .container3 {
+                flex-direction: column; /* Stack the cards vertically on smaller screens */
+            }
+
+            .card {
+                max-width: 70%; /* Make sure cards take full width on smaller screens */
+                min-width: 60%; /* Ensure cards fill the width */
+            }
+
+            .number {
+                font-size: 36px;
+            }
+
+            .text {
+                font-size: 16px;
+            }
+
+            .description {
+                font-size: 14px;
+                margin-top: 30px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .number {
+                font-size: 28px;
+            }
+
+            .text {
+                font-size: 14px;
+            }
+
+            .description {
+                font-size: 12px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container3">
+        <div class="card">
+            <i class="fa-solid fa-calendar-days icon"></i>
+            <h2 class="number" id="number1">200+</h2>
+            <div class="text">COMPANIES</div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-rocket icon"></i>
+            <h2 class="number" id="number2">25 L</h2>
+            <div class="text">HIGHEST PACKAGE</div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-mug-hot icon"></i>
+            <h2 class="number" id="number3">500000</h2>
+            <div class="text">AVERAGE PACKAGE</div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-people-group icon"></i>
+            <h2 class="number" id="number4">250+</h2>
+            <div class="text">PLACEMENTS</div>
+        </div>
+    </div>
+    <div class="description">
+        The T&P Cell ensures that all students opting for placements get a minimum of 5 job opportunities. <br>
+        A total of 5000 students are placed till date since the inception of college.
+    </div>
+
+    <script>
+        function animateNumber(elementId, targetNumber) {
+            let element = document.getElementById(elementId);
+            let startNumber = 0;
+            let duration = 2000;
+            let startTime = null;
+
+            function animate(currentTime) {
+                if (!startTime) startTime = currentTime;
+                let progress = currentTime - startTime;
+                let increment = Math.min(Math.ceil((progress / duration) * targetNumber), targetNumber);
+                element.textContent = increment;
+
+                if (increment < targetNumber) {
+                    requestAnimationFrame(animate);
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        animateNumber("number1", 200);
+        animateNumber("number2", 25);
+        animateNumber("number3", 5);
+        animateNumber("number4", 250);
+    </script>
+</body>
+</body>

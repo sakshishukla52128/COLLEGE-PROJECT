@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <style>
+        /* Add some basic styling to make it look decent */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .congratulation {
+            background-color: #00004d;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 20px;
+            width: 400px; /* Increased width to 400px */
+            display: inline-block;
+            overflow: hidden; /* Add overflow: hidden to prevent text from overflowing */
+            box-shadow: 0 0 10px rgba(216, 223, 228, 0.1); /* Add a subtle box shadow */
+            color: #fff; /* Change text color to white */
+        }
+        .congratulation img {
+            width: 150px; /* Set a fixed width for the image */
+            height: 150px; /* Set a fixed height for the image */
+            margin: 10px; /* Add some margin around the image */
+            border: 1px solid #fff; /* Add a white border to create a square box */
+            object-fit: cover; /* Ensure the image is scaled to fit the box */
+        }
+        .marquee {
+            width: 100%;
+            overflow-x: hidden;
+            white-space: nowrap;
+        }
+        .marquee .congratulation {
+            display: inline-block;
+            margin-right: 20px;
+            animation: scroll 4s linear infinite;
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #fff;">Congratulations!</h1>
+    <div class="marquee">
+        <div class="congratulation">
+            <h2>Bhavna Trust Degree College</h2>
+            <p>Placement Cell Wishes You</p>
+            <img src="" alt="">
+            <h3>Congratulations Omkar Ghole</h3>
+            <p>On your Placement in Pentagon with an CTC of 4.5 LPA</p>
+            <span class="company">Pentagon</span>
+            <span class="ctc">4.5 LPA</span>
+        </div>
+        <div class="congratulation">
+            <h2>Bhavna Trust Degree College</h2>
+            <p>Placement Cell Wishes You</p>
+            <img src="" alt="">
+            <h3>Congratulations Akash Savita</h3>
+            <p>On your Placement in Reliance Industries Limited CTC of 8 LPA</p>
+            <span class="company">Reliance Industries Limited</span>
+            <span class="ctc">8 LPA</span>
+        </div>
+        <div class="congratulation">
+            <h2>Bhavna Trust Degree College</h2>
+            <p>Placement Cell Wishes You</p>
+            <img src="" alt="">
+            <h3>Congratulations Nikita Badkas</h3>
+            <p>On your Placement in Technimont with an CTC of 6.5 LPA</p>
+            <span class="company">Technimont</span>
+            <span class="ctc">6.5 LPA</span>
+        </div>
+        <!-- Add more congratulation messages here -->
+    </div>
+</body>
+</html>

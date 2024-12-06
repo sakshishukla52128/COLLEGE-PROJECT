@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <style>
+    /* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+      overflow: hidden; /* Prevent overflow */
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Cover the container without distortion */
+      display: block; /* Remove extra space below image */
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)); /* Gradient overlay for better text visibility */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff; /* White text for contrast */
+      z-index: 2; /* Ensure content is above the overlay */
+      padding: 0 20px; /* Padding for better readability */
+      box-sizing: border-box; /* Ensures padding does not affect overall dimensions */
+    }
+
+    .hero-content h1 {
+      font-family: 'Great Vibes', cursive; /* Elegant and bold cursive font */
+      font-size: clamp(2.5rem, 5vw, 6rem); /* Responsive font size */
+      font-weight: 700; /* Bold text */
+      color: #fff; /* White text color */
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Strong shadow for better readability */
+      margin: 0;
+    }
+
+    .hero-content p {
+      font-family: 'Montserrat', sans-serif; /* Modern and versatile sans-serif font */
+      font-size: 1.5rem; /* Slightly larger font for emphasis */
+      color: #e0e0e0; /* Light gray text color for contrast */
+      margin: 10px 0 20px; /* Margin for spacing */
+    }
+
+    .cta-button {
+      display: inline-block;
+      font-family: 'Raleway', sans-serif; /* Stylish and clean sans-serif font */
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background-color: #00004d; /* Bright blue button */
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #00004d; /* Darker blue on hover */
+      transform: translateY(-3px); /* Slight lift effect */
+    }
+
+    .hero-content h1 {
+      font-size: 80px; /* increase font size to 48 pixels */
+    }
+
+    p {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00004d; /* a bright blue color */
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* adds a subtle shadow effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="bhavna.png" alt="Background Image">
+    <div class="hero-overlay"></div>    
+    <div class="hero-content">
+      <h1>Empowering The Next Generation Of Leaders</h1>
+      <p>Unlock Your Full Potential. Take the First Step Towards Success.</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+  </div>
+</body>
+</html>

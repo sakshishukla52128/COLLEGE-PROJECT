@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <link rel="stylesheet" href="loginsignup.css">
+    <script src="loginsignup.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Phone Animation -->
+        <div class="phone-container">
+            <div class="phone">
+                <div class="phone-screen">
+                    <div id="phone-content">
+                        <!-- Content displayed inside the phone -->
+                        <h2>Welcome!</h2>
+                        <p>Best wishes for your placement drive. We believe in your potential and wish you the very best for your future endeavors.</p>
+                        <button onclick="showForm('student-registration')">Student Registration</button>
+                        <button onclick="showForm('student-login')">Student Login</button>
+                        <button onclick="showForm('company-registration')">Company Registration</button>
+                        <button onclick="showForm('company-login')">Company Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forms -->
+        <div class="forms">
+            <!-- Student Registration Form -->
+            <div id="student-registration" class="form-content">
+                <h2 style="color: #00004d;">Student Registration</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="student-name">Full Name</label>
+                        <input type="text" id="student-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-email">Email</label>
+                        <input type="email" id="student-email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-phone">Phone Number</label>
+                        <input type="tel" id="student-phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="qr-code">Upload QR Code</label>
+                        <input type="file" id="qr-code" accept="image/*" onchange="displayQRCode(event)">
+                        <img id="qr-code-preview" style="display: none; max-width: 100px; margin-top: 10px;" alt="QR Code Preview">
+                        <button type="button" id="delete-qr-code" onclick="deleteQRCode()" style="display: none;">Delete QR Code</button>
+                    </div>
+                    <button type="submit">Register</button>
+                    <p style="font-size: 14px; color: #555; margin-top: 10px;">
+                        By registering, you agree to our <a href="#" style="color: #00004d;">Privacy Policy</a> and <a href="#" style="color: #00004d;">Terms of Service</a>.
+                    </p>
+                </form>
+            </div>
+
+            <!-- Student Login Form -->
+            <div id="student-login" class="form-content" style="display: none;">
+                <h2 style="color: #00004d;">Student Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-phone">Phone Number</label>
+                        <input type="tel" id="login-phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-otp">OTP</label>
+                        <input type="text" id="login-otp" placeholder="OTP" required>
+                    </div>
+                    <button type="submit">Login</button>
+
+                    <p style="font-size: 14px; color: #555; margin-top: 10px;">
+                        By registering, you agree to our <a href="#" style="color: #00004d;">Privacy Policy</a> and <a href="#" style="color: #00004d;">Terms of Service</a>.
+                    </p>
+                </form>
+            </div>
+
+            <!-- Company Registration Form -->
+            <div id="company-registration" class="form-content" style="display: none;">
+                <h2 style="color: #00004d;">Company Registration</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="company-name">Company Name</label>
+                        <input type="text" id="company-name" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="job-type">What kind of job opportunities are available at your company?</label>
+                        <input type="text" id="job-type" placeholder="What kind of job opportunities are available at your company?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-website">Company Website</label>
+                        <input type="url" id="company-website" placeholder="Enter your website URL" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-email">Company Email</label>
+                        <input type="email" id="company-email" placeholder="Company Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-otp">Enter OTP</label>
+                        <input type="text" id="company-otp" placeholder="Enter OTP" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-password">Password</label>
+                        <input type="password" id="company-password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-password-retype">Re-type Password</label>
+                        <input type="password" id="company-password-retype" placeholder="Re-type Password" required>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+                <!-- Privacy Policy -->
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">
+                    By registering, you agree to our <a href="#" style="color: #00004d;">Privacy Policy</a> and <a href="#" style="color: #00004d;">Terms of Service</a>.
+                </p>
+            </div>
+
+            <!-- Company Login Form -->
+            <div id="company-login" class="form-content" style="display: none;">
+                <h2 style="color: #00004d;">Company Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="company-login-email">Email</label>
+                        <input type="email" id="company-login-email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="company-login-otp">OTP</label>
+                        <input type="text" id="company-login-otp" placeholder="OTP" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-login-password">Password</label>
+                        <input type="password" id="company-login-password" placeholder="Password">
+                    </div>
+                    <button type="submit">Login</button>
+                    <!-- Privacy Policy -->
+                    <p style="font-size: 14px; color: #555; margin-top: 10px;">
+                        By registering, you agree to our <a href="#" style="color: #00004d;">Privacy Policy</a> and <a href="#" style="color: #00004d;">Terms of Service</a>.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
