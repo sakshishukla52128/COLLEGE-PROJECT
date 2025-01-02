@@ -1,0 +1,200 @@
+<body>
+    <h1 class="timeline-heading">IT Placement Process</h1>
+    <div class="timeline">
+        <div class="container left-container">
+            <h1>Step 1</h1><br>
+            <div class="text-box">
+                <big><b>Student Admission</b></big>
+                <p>Enroll in the IT program and complete initial registration to kickstart your placement journey.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <h1>Step 2</h1><br>
+            <div class="text-box">
+                <big><b>Placement Orientation</b></big>
+                <p>Attend an orientation session to understand the placement process and requirements.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+            <h1>Step 3</h1><br>
+            <div class="text-box">
+                <big><b>Mock Interview</b></big>
+                <p>Participate in mock interviews to enhance your confidence and communication skills.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <h1>Step 4</h1><br>
+            <div class="text-box">
+                <big><b>Mock Session with Experts</b></big>
+                <p>Gain valuable insights from industry experts through detailed mock sessions.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+            <h1>Step 5</h1><br>
+            <div class="text-box">
+                <big><b>Shortlisting</b></big>
+                <p>Get shortlisted based on your skills, profile, and mock performance.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <h1>Step 6</h1><br>
+            <div class="text-box">
+                <big><b>On Campus Drive</b></big>
+                <p>Participate in campus placement drives hosted by reputed companies.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+            <h1>Step 7</h1><br>
+            <div class="text-box">
+                <big><b>Final Interview</b></big>
+                <p>Attend the final interview to secure your dream job in IT.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <h1>Step 8</h1><br>
+            <div class="text-box">
+                <big><b>Selection</b></big>
+                <p>Receive your offer letter and join your new organization.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+    </div>
+    <style>
+       body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #004aad, #0073e6);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1.timeline-heading {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.text-box {
+    background: linear-gradient(to right, #ffffff, #d9e3f0);
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.text-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.text-box big {
+    color: #004aad;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.left-container-arrow {
+    position: absolute;
+    top: 20px;
+    right: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.right-container-arrow {
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+/* Decorative Dots */
+.container::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #004aad;
+    border-radius: 50%;
+    top: 20px;
+    left: -5px;
+    z-index: 1;
+}
+
+.container.right-container::before {
+    left: unset;
+    right: -5px;
+}
+
+/* For Mobile Responsiveness */
+@media (max-width: 768px) {
+    .timeline {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .left-container,
+    .right-container {
+        left: 0;
+    }
+
+    .text-box {
+        margin: 0 auto 20px auto;
+    }
+
+    .left-container-arrow,
+    .right-container-arrow {
+        display: none;
+    }
+
+    h1.timeline-heading {
+        font-size: 1.8em;
+    }
+}
+
+    </style>
+</body>

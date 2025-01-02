@@ -13,33 +13,43 @@
             <div class="marquee-wrapper">
                 <div class="marquee">
                     <div class="story-card">
-                        <img src="image.png" alt="John Doe">
+                        <img src="image2.png" alt="John Doe">
                         <h3>John Doe</h3>
-                        <p>Placed at <span>Google</span></p>
+                        <p class="content">Placed at <span>Google</span></p>
+                        <p class="content">Achieved an amazing ₹35 LPA with a great skillset in AI.</p>
+                        <p class="content">John's dedication and hard work paid off, and he is now part of the Google family!</p>
                         <p class="lpa">₹35 LPA</p>
                     </div>
                     <div class="story-card">
-                        <img src="student2.jpg" alt="Jane Smith">
+                        <img src="image4.png" alt="Jane Smith">
                         <h3>Jane Smith</h3>
-                        <p>Placed at <span>Amazon</span></p>
+                        <p class="content">Placed at <span>Amazon</span></p>
+                        <p class="content">With her exceptional skills in software engineering, she landed her dream job.</p>
+                        <p class="content">Jane's focus and persistence helped her secure an impressive ₹28 LPA.</p>
                         <p class="lpa">₹28 LPA</p>
                     </div>
                     <div class="story-card">
-                        <img src="student3.jpg" alt="Rahul Gupta">
+                        <img src="image6.png" alt="Rahul Gupta">
                         <h3>Rahul Gupta</h3>
-                        <p>Placed at <span>Microsoft</span></p>
+                        <p class="content">Placed at <span>Microsoft</span></p>
+                        <p class="content">Rahul's expertise in cloud computing and AI made him a perfect fit for Microsoft.</p>
+                        <p class="content">He earned ₹30 LPA with his strong technical knowledge and innovative approach.</p>
                         <p class="lpa">₹30 LPA</p>
                     </div>
                     <div class="story-card">
-                        <img src="student4.jpg" alt="Priya Sharma">
+                        <img src="image5.png" alt="Priya Sharma">
                         <h3>Priya Sharma</h3>
-                        <p>Placed at <span>TCS</span></p>
+                        <p class="content">Placed at <span>TCS</span></p>
+                        <p class="content">Her skills in full-stack development led her to land an excellent offer from TCS.</p>
+                        <p class="content">Priya’s hard work earned her a well-deserved ₹12 LPA salary.</p>
                         <p class="lpa">₹12 LPA</p>
                     </div>
                     <div class="story-card">
-                        <img src="student5.jpg" alt="Amit Singh">
+                        <img src="image7.png" alt="Amit Singh">
                         <h3>Amit Singh</h3>
-                        <p>Placed at <span>Infosys</span></p>
+                        <p class="content">Placed at <span>Infosys</span></p>
+                        <p class="content">Amit's deep understanding of software engineering principles helped him secure an offer.</p>
+                        <p class="content">He earned ₹10 LPA with his skills in Java, Python, and problem-solving.</p>
                         <p class="lpa">₹10 LPA</p>
                     </div>
                 </div>
@@ -63,8 +73,8 @@ body {
 .success-stories {
     text-align: center;
     padding: 40px 20px;
-    width: 90%;
-    max-width: 1200px;
+    width: 170%;
+    max-width: 1400px; /* Increased width for the container */
     border-radius: 20px;
     background: linear-gradient(135deg, #222831, #393e46);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -86,7 +96,7 @@ body {
 
 .marquee {
     display: flex;
-    gap: 30px;
+    gap: 50px; /* Increased gap for better spacing */
     animation: scroll 20s linear infinite;
 }
 
@@ -103,9 +113,9 @@ body {
 .story-card {
     background: linear-gradient(145deg, #ffffff, #e8e8e8);
     color: #393e46;
-    padding: 25px;
+    padding: 10px; /* Increased padding */
     border-radius: 15px;
-    width: 250px;
+    width: 400px; /* Increased width for the cards */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.6);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -134,6 +144,7 @@ body {
 
 .story-card p {
     margin: 5px 0;
+    font-family: 'Roboto', sans-serif; /* Changed font for content */
 }
 
 .story-card span {
@@ -155,14 +166,13 @@ body {
     }
 
     .story-card {
-        width: 200px;
+        width: 220px; /* Adjusted width for mobile screens */
     }
 
     .marquee {
         gap: 20px;
     }
 }
-
     </style>
 </body>
 </html>
