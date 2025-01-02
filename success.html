@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Success Stories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="success-stories">
+        <div class="container">
+            <h2>Our Proud Achievers</h2>
+            <div class="marquee-wrapper">
+                <div class="marquee">
+                    <div class="story-card">
+                        <img src="image.png" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <p>Placed at <span>Google</span></p>
+                        <p class="lpa">₹35 LPA</p>
+                    </div>
+                    <div class="story-card">
+                        <img src="student2.jpg" alt="Jane Smith">
+                        <h3>Jane Smith</h3>
+                        <p>Placed at <span>Amazon</span></p>
+                        <p class="lpa">₹28 LPA</p>
+                    </div>
+                    <div class="story-card">
+                        <img src="student3.jpg" alt="Rahul Gupta">
+                        <h3>Rahul Gupta</h3>
+                        <p>Placed at <span>Microsoft</span></p>
+                        <p class="lpa">₹30 LPA</p>
+                    </div>
+                    <div class="story-card">
+                        <img src="student4.jpg" alt="Priya Sharma">
+                        <h3>Priya Sharma</h3>
+                        <p>Placed at <span>TCS</span></p>
+                        <p class="lpa">₹12 LPA</p>
+                    </div>
+                    <div class="story-card">
+                        <img src="student5.jpg" alt="Amit Singh">
+                        <h3>Amit Singh</h3>
+                        <p>Placed at <span>Infosys</span></p>
+                        <p class="lpa">₹10 LPA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a1d, #4e4e50);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Success Stories Section */
+.success-stories {
+    text-align: center;
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #222831, #393e46);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.success-stories h2 {
+    font-size: 3rem;
+    color: #00adb5;
+    text-shadow: 0 4px 10px rgba(0, 173, 181, 0.6);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Marquee Container */
+.marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    gap: 30px;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Story Cards */
+.story-card {
+    background: linear-gradient(145deg, #ffffff, #e8e8e8);
+    color: #393e46;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 173, 181, 0.4), inset 0 1px 4px rgba(255, 255, 255, 0.8);
+}
+
+.story-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid #00adb5;
+    box-shadow: 0 5px 15px rgba(0, 173, 181, 0.4);
+}
+
+.story-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #222831;
+}
+
+.story-card p {
+    margin: 5px 0;
+}
+
+.story-card span {
+    color: #00adb5;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.story-card .lpa {
+    font-size: 1.2rem;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .success-stories h2 {
+        font-size: 2.2rem;
+    }
+
+    .story-card {
+        width: 200px;
+    }
+
+    .marquee {
+        gap: 20px;
+    }
+}
+
+    </style>
+</body>
+</html>

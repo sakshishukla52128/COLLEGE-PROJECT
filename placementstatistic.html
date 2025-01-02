@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Placement Statistics Section -->
+        <section class="placement-stats">
+            <div class="section-header">
+                <h2>Our Placement Statistics</h2>
+                <p>Our students are excelling at the highest levels. Explore our placement journey!</p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-number="800">0</div>
+                    <p>Students Placed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-number="9.5">0</div>
+                    <p>Average LPA</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-number="50">0</div>
+                    <p>Recruiters</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recruiters Section -->
+        <section class="recruiters">
+            <div class="section-header">
+                <h2>Our Prestigious Recruiters</h2>
+            </div>
+            <div class="recruiter-logos">
+                <span class="recruiter-logo">Google</span>
+                <span class="recruiter-logo">Amazon</span>
+                <span class="recruiter-logo">Microsoft</span>
+                <span class="recruiter-logo">TCS</span>
+                <span class="recruiter-logo">Infosys</span>
+                <span class="recruiter-logo">Wipro</span>
+            </div>
+        </section>
+    </div>
+<style>
+    /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Section Header Styles */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #00004d;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Placement Stats Section */
+.placement-stats {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.stat-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00004d;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Recruiters Section */
+.recruiters {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recruiter-logos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.recruiter-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #00004d;
+    color: white;
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recruiter-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .recruiter-logos {
+        flex-direction: column;
+    }
+
+    .recruiter-logo {
+        font-size: 1.2rem;
+        margin: 5px;
+    }
+}
+
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Animated counter for placement statistics
+    const stats = document.querySelectorAll('.stat-number');
+
+    function animateStat(stat) {
+        let targetValue = parseInt(stat.getAttribute('data-number'), 10);
+        let currentValue = 0;
+        const interval = setInterval(function() {
+            if (currentValue < targetValue) {
+                currentValue++;
+                stat.textContent = currentValue;
+            } else {
+                clearInterval(interval);
+            }
+        }, 10); // Speed of the animation (smaller value = faster)
+    }
+
+    // Trigger the animation when stats section is in view
+    const statsSection = document.querySelector('.stats');
+
+    function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    }
+
+    function handleStatsAnimation() {
+        if (isInView(statsSection)) {
+            stats.forEach(function(stat) {
+                animateStat(stat);
+            });
+            window.removeEventListener('scroll', handleStatsAnimation);
+        }
+    }
+
+    window.addEventListener('scroll', handleStatsAnimation);
+    handleStatsAnimation(); // Check on initial load
+
+    // Recruiter logos hover effect
+    const recruiters = document.querySelectorAll('.recruiter-logo');
+    recruiters.forEach(function(recruiter) {
+        recruiter.addEventListener('mouseenter', function() {
+            recruiter.style.transform = 'scale(1.1)';
+        });
+        recruiter.addEventListener('mouseleave', function() {
+            recruiter.style.transform = 'scale(1)';
+        });
+    });
+});
+
+</script>
+</body>
+</html>
