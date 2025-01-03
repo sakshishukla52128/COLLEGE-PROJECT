@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placement Cell</title>
     <link rel="stylesheet" href="home.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
     <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00004d; position: fixed;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00004d; position: fixed; width: 100%; z-index: 1000;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="my.png" alt="Logo" width="55" height="53" class="d-inline-block align-text-top" >
+                <img src="my.png" alt="Logo" width="55" height="53" class="d-inline-block align-text-top">
                 PlacementCell
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,40 +23,39 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="companiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Companies
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="companiesDropdown">
                             <li><a class="dropdown-item" href="companyregistration.html">Registered Companies</a></li>
                             <li><a class="dropdown-item" href="#">Past Recruiters</a></li>
-                           
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="studentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Students
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="studentsDropdown">
                             <li><a class="dropdown-item" href="top_students.html">Student Profiles</a></li>
                             <li><a class="dropdown-item" href="placementstatistic.html">Placement Statistics</a></li>
                             <li><a class="dropdown-item" href="success.html">Success Stories</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="jobsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Jobs
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="">Current Openings</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="jobsDropdown">
+                            <li><a class="dropdown-item" href="#">Current Openings</a></li>
                             <li><a class="dropdown-item" href="#">Past Placements</a></li>
-                            <li><a class="dropdown-item" href="">Interview Preparation</a></li>
+                            <li><a class="dropdown-item" href="#">Interview Preparation</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Resources
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
                             <li><a class="dropdown-item" href="resume.html">Resume Templates</a></li>
                             <li><a class="dropdown-item" href="interviewtips.html">Interview Tips</a></li>
                             <li><a class="dropdown-item" href="Guideline.html">Placement Guidelines</a></li>
@@ -76,31 +73,29 @@
                 </ul>
                 <div class="d-flex">
                     <a href="loginsignup.html" class="btn btn-light mx-2">Signup/login</a>
-                  
                 </div>
             </div>
         </div>
     </nav>
 
+
     <section class="home">
-        <div class="hero">
-            <img src="bhavna picture.png" alt="Hero Image">
-            <div class="blurr"></div>
-            <div class="content">
-                <h1 style="color: #fef9f9f3; font-size: 40px;">Empowering The Next Generation Span Of Leaders</h1>
-                <p style="color: #f7f5f5; font-size: 40px">Unlock Your Full Potential. Take the First Step Towards Success.</p>
-                <a href="#contact" class="cta-button">Get Started</a>
-            </div>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="hero position-relative">
+          <img src="bhavna picture.png" alt="Hero Image" class="img-fluid" style="opacity: 0.5;">
+          <div class="blurr position-absolute top-0 left-0 right-0 bottom-0" style="background-color: rgba(255, 255, 255, 0.5);"></div>
+          <div class="content text-center position-relative">
+              <h1 style="color: #fef9f9; font-size: 50px; font-weight: bold;">Empowering The Next Generation Span Of Leaders</h1>
+              <p style="color: #f7f5f5; font-size: 45px; font-weight: bold;">Unlock Your Full Potential. Take the First Step Towards Success.</p>
+              <a href="#contact" class="btn btn-primary cta-button">Get Started</a>
+          </div>
+      </div>
+  </section>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
-
-   
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 <!DOCTYPE html>
 <html lang="en">
