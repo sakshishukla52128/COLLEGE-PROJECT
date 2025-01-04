@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(90deg, #f5f3f3, #0c0c5b); /* White to blue gradient */
+    background: linear-gradient(90deg, #999494, #0c0c5b); /* White to blue gradient */
     position: fixed;
     width: 100%;
     top: 0;
