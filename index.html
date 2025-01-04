@@ -86,7 +86,7 @@
           <div class="content text-center position-relative">
               <h1 style="color: #fef9f9; font-size: 50px; font-weight: bold;">Empowering The Next Generation Span Of Leaders</h1>
               <p style="color: #f7f5f5; font-size: 45px; font-weight: bold;">Unlock Your Full Potential. Take the First Step Towards Success.</p>
-              <a href="#contact" class="btn btn-primary cta-button">Get Started</a>
+              <a href="#contact" class="btn btn-primary cta-button" style="background: linear-gradient(90deg, #473333, #1313ae); width: 10%; height: 10%;" >Get Started</a>
           </div>
       </div>
   </section>
@@ -243,6 +243,114 @@
         }
     </style>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Placement Cell</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Arial', sans-serif;
+    }
+    .about-section {
+      padding: 60px 0;
+    }
+    .about-title {
+      color: #00004d;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .person-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+    .person-card img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .person-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .person-role {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .person-thought {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<section class="about-section">
+  <div class="container">
+    <h2 class="about-title">About Us</h2>
+    <div class="row g-4">
+      <!-- Person 1 -->
+      <div class="col-md-4">
+        <div class="person-card">
+          <img src="trusty.png" alt="Person 1">
+          <h4 class="person-name">Mr. Rohan Mehta</h4>
+          <p class="person-role">College Trusty</p>
+          <p class="person-thought">
+            "The future belongs to those who prepare for it today. Wishing all our students a successful placement journey!"
+          </p>
+        </div>
+      </div>
+      <!-- Person 2 -->
+      <div class="col-md-4">
+        <div class="person-card">
+          <img src="principal.png" alt="Person 2">
+          <h4 class="person-name">Dr. Aruna J Singham</h4>
+          <p class="person-role">principal</p>
+          <p class="person-thought">
+            "Opportunities don't happen. You create them. Best wishes for your bright careers ahead!"
+          </p>
+        </div>
+      </div>
+      <!-- Person 3 -->
+      <div class="col-md-4">
+        <div class="person-card">
+          <img src="https://via.placeholder.com/120" alt="Person 3">
+          <h4 class="person-name">Ms. Ananya Verma</h4>
+          <p class="person-role">Career Counselor</p>
+          <p class="person-thought">
+            "Dream big, work hard, and stay focused. We believe in your potential. Good luck!"
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <p class="lead text-muted">
+        "The Placement Cell is dedicated to bridging the gap between talent and opportunity. Together, we build futures!"
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
 
     <!DOCTYPE html>
@@ -759,6 +867,63 @@ document.querySelector('.carousel-track').addEventListener('mouseout', () => {
   <title>Placement Statistics</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .charts {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .chart-container {
+      width: 45%;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+
+      .chart-container {
+        width: 90%; /* Make charts take full width on smaller screens */
+        margin: 0 auto; /* Center the charts */
+      }
+
+      .charts {
+        flex-direction: column; /* Stack charts vertically on small screens */
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -774,157 +939,116 @@ document.querySelector('.carousel-track').addEventListener('mouseout', () => {
       </div>
     </div>
   </div>
- <style>
-    body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f4f8;
-}
-
-.container {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-h1 {
-  color: #333;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  font-family: 'Arial', sans-serif;
-}
-
-.charts {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.chart-container {
-  width: 45%;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-canvas {
-  max-width: 100%;
-  height: auto;
-}
-
- </style>
- <script>
-        // Chart 1: Highest & Average Package
-const packageCtx = document.getElementById("packageChart").getContext("2d");
-new Chart(packageCtx, {
-  type: "bar",
-  data: {
-    labels: ["2020-21", "2021-22", "2022-23"],
-    datasets: [
-      {
-        label: "Highest Package (in ₹ Thousands)",
-        data: [49000, 56000, 74000],
-        backgroundColor: "#4CAF50",
-        borderColor: "#388E3C",
-        borderWidth: 2,
-        hoverBackgroundColor: "#388E3C",
-        hoverBorderColor: "#1B5E20"
+  <script>
+    // Chart 1: Highest & Average Package
+    const packageCtx = document.getElementById("packageChart").getContext("2d");
+    new Chart(packageCtx, {
+      type: "bar",
+      data: {
+        labels: ["2020-21", "2021-22", "2022-23"],
+        datasets: [
+          {
+            label: "Highest Package (in ₹ Thousands)",
+            data: [49000, 56000, 74000],
+            backgroundColor: "#4CAF50",
+            borderColor: "#388E3C",
+            borderWidth: 2,
+            hoverBackgroundColor: "#388E3C",
+            hoverBorderColor: "#1B5E20"
+          },
+          {
+            label: "Average Package (in ₹ Thousands)",
+            data: [28000, 27000, 32000],
+            backgroundColor: "#2196F3",
+            borderColor: "#1976D2",
+            borderWidth: 2,
+            hoverBackgroundColor: "#1976D2",
+            hoverBorderColor: "#1565C0"
+          },
+        ],
       },
-      {
-        label: "Average Package (in ₹ Thousands)",
-        data: [28000, 27000, 32000],
-        backgroundColor: "#2196F3",
-        borderColor: "#1976D2",
-        borderWidth: 2,
-        hoverBackgroundColor: "#1976D2",
-        hoverBorderColor: "#1565C0"
-      },
-    ],
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { position: "top" },
-      title: {
-        display: true,
-        text: "Highest & Average Package (Last 3 Years)",
-        font: { size: 18 },
-        color: '#333',
-      },
-    },
-    scales: {
-      y: {
-        beginAtZero: true,
-        ticks: {
-          callback: function(value) {
-            return '₹' + value / 1000 + 'K';
-          }
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: "top" },
+          title: {
+            display: true,
+            text: "Highest & Average Package (Last 3 Years)",
+            font: { size: 18 },
+            color: '#333',
+          },
         },
-        grid: {
-          borderColor: '#ddd',
-          color: '#f5f5f5'
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: function(value) {
+                return '₹' + value / 1000 + 'K';
+              }
+            },
+            grid: {
+              borderColor: '#ddd',
+              color: '#f5f5f5'
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            }
+          }
         }
       },
-      x: {
-        grid: {
-          display: false
-        }
-      }
-    }
-  },
-});
+    });
 
-// Chart 2: Companies Recruiting
-const recruitingCtx = document.getElementById("recruitingChart").getContext("2d");
-new Chart(recruitingCtx, {
-  type: "bar",
-  data: {
-    labels: ["2020-2021", "2021-2022", "2022-2023", "2023-2024"],
-    datasets: [
-      {
-        label: "Number of Companies",
-        data: [19, 17, 25, 28],
-        backgroundColor: "#FF9800",
-        borderColor: "#F57C00",
-        borderWidth: 2,
-        hoverBackgroundColor: "#F57C00",
-        hoverBorderColor: "#E65100"
+    // Chart 2: Companies Recruiting
+    const recruitingCtx = document.getElementById("recruitingChart").getContext("2d");
+    new Chart(recruitingCtx, {
+      type: "bar",
+      data: {
+        labels: ["2020-2021", "2021-2022", "2022-2023", "2023-2024"],
+        datasets: [
+          {
+            label: "Number of Companies",
+            data: [19, 17, 25, 28],
+            backgroundColor: "#FF9800",
+            borderColor: "#F57C00",
+            borderWidth: 2,
+            hoverBackgroundColor: "#F57C00",
+            hoverBorderColor: "#E65100"
+          },
+        ],
       },
-    ],
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: "Companies Recruiting (Last 3 Years)",
-        font: { size: 18 },
-        color: '#333',
-      },
-    },
-    scales: {
-      y: {
-        beginAtZero: true,
-        grid: {
-          borderColor: '#ddd',
-          color: '#f5f5f5'
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "Companies Recruiting (Last 3 Years)",
+            font: { size: 18 },
+            color: '#333',
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            grid: {
+              borderColor: '#ddd',
+              color: '#f5f5f5'
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            }
+          }
         }
       },
-      x: {
-        grid: {
-          display: false
-        }
-      }
-    }
-  },
-});
-
- </script>
+    });
+  </script>
 </body>
 </html>
+
 
 
 <!DOCTYPE html>
@@ -1086,167 +1210,264 @@ new Chart(recruitingCtx, {
 </head>
 
 </body>
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-    </head>
-    <body>
-      
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Bhavna Trust Junior & Degree College of Commerce & Science</h3>
-        <div class="social-icons">
-          <a href="#"><i class="pi pi-facebook"></i></a>
-          <a href="#"><i class="pi pi-linkedin"></i></a>
-          <a href="#"><i class="pi pi-instagram"></i></a>
-          <a href="#"><i class="pi pi-youtube"></i></a>
-        </div>
-      </div>
-  
-      <div class="footer-section">
-        <h4>Featured Links</h4>
-        <ul>
-          <li><a href="#">Staff</a></li>
-          <li><a href="#">Infrastructure</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Faculty</a></li>
-          <li><a href="#">Student Zone</a></li>
-          <li><a href="#">Library</a></li>
-          <li><a href="#">Activities</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-section">
-        <h4>Information</h4>
-        <address>
-          Plot No. 5, Sunder Baug, Raje Shivaji Chowk, V. N. Purav Marg, Deonar -
-          Chembur, Mumbai - 400 088. MH. India.
-        </address>
-        <p><i class="pi pi-phone"></i> +91 22-5518649 / 25484950</p>
-        <p><i class="pi pi-mobile"></i> +91 9898989898</p>
+  <div class="footer-container">
+    <!-- Section 1: College Info -->
+    <div class="footer-section">
+      <h3 style="color: white;">Bhavna Trust Junior & Degree College</h3>
+      <p>Commerce & Science</p>
+      <img src="logo.png" alt="College Logo" class="footer-logo">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
-  
-    <div class="popup" id="footerPopup">
-      <div class="popup-content">
-        <h3>More Information</h3>
-        <p>This is a demo popup content.</p>
-        <button id="closePopup">Close</button>
-      </div>
+
+    <!-- Section 2: Featured Links -->
+    <div class="footer-section">
+      <h4>Featured Links</h4>
+      <ul>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Infrastructure</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Student Zone</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Activities</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
     </div>
-  </footer>
+
+    <!-- Section 3: Contact Info -->
+    <div class="footer-section" >
+      <h4>Contact Information</h4>
+      <address>
+        Plot No. 5, Sunder Baug, Raje Shivaji Chowk,<br>
+        V. N. Purav Marg, Deonar - Chembur,<br>
+        Mumbai - 400 088, MH, India.
+      </address>
+      <p><i class="fas fa-phone"></i> +91 22-5518649 / 25484950</p>
+      <p><i class="fas fa-mobile-alt"></i> +91 9898989898</p>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <a href="#top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="footerPopup">
+    <div class="popup-content">
+      <h3>Stay Updated!</h3>
+      <p>Subscribe to our newsletter for the latest updates and news.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+</footer>
+
 <style>
-    .footer {
-  background-color: rgba(0, 4, 221, 0.9);
-  padding: 20px 10px;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  position: relative;
-}
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+  .footer {
+    background: linear-gradient(to right, #00004d, #cbcbd0); /* Two-tone background */
+    color: #fff;
+    padding: 20px 20px;
+    font-size: 14px;
+  }
 
-.footer-section {
-  margin: 10px;
-  flex: 1;
-  min-width: 250px;
-}
-
-.footer h3,
-.footer h4 {
-  margin-bottom: 10px;
-  color: #ffcc00;
-}
-
-.footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer ul li {
-  margin: 5px 0;
-}
-
-.footer ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-.footer ul li a:hover {
-  color: #ffcc00;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.social-icons a {
-  color: #fff;
-  font-size: 1.5em;
-}
-
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-#footerPopup.show {
-  display: flex;
-}
-
-@media screen and (max-width: 768px) {
   .footer-container {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
   }
 
   .footer-section {
-    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
   }
-}
 
-</style>  
+  .footer-logo {
+    max-width: 100px; /* Reduced size */
+    margin: 10px 0;
+  }
+
+  .footer h3, .footer h4 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+
+  .footer p, .footer address {
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  .footer-section h4 {
+    color: #ffcc00;
+  }
+
+  .footer-section p,
+  .footer-section address {
+    color: #fff; /* Set contact information text to white */
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+
+
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer ul li {
+    margin: 8px 0;
+  }
+
+  .footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer ul li a:hover {
+    color: #ffcc00;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #ffcc00;
+  }
+
+  .back-to-top {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .back-to-top a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .back-to-top a:hover {
+    color: #ffcc00;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .subscribe-form {
+    margin: 10px 0;
+  }
+
+  .subscribe-form input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ece6e6;
+    border-radius: 5px;
+  }
+
+  .subscribe-form button {
+    padding: 10px 15px;
+    background: #00004d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .subscribe-form button:hover {
+    background: #ffcc00;
+    color: #000;
+  }
+
+  #footerPopup.show {
+    display: flex;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-section {
+      margin-bottom: 20px;
+    }
+
+    .footer-logo {
+      max-width: 100px;
+    }
+  }
+</style>
+
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-  const popup = document.getElementById("footerPopup");
-  const closePopup = document.getElementById("closePopup");
+  document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("footerPopup");
+    const closePopup = document.getElementById("closePopup");
 
-  // Example: Open popup after some action
-  setTimeout(() => {
-    popup.classList.add("show");
-  }, 2000);
+    // Show popup after a delay
+    setTimeout(() => {
+      popup.classList.add("show");
+    }, 3000);
 
-  closePopup.addEventListener("click", () => {
-    popup.classList.remove("show");
+    closePopup.addEventListener("click", () => {
+      popup.classList.remove("show");
+    });
   });
-});
-
 </script>
 </body>
-    </html>
+</html>

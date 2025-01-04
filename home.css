@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-    background-color: #00004d;
+    background: linear-gradient(90deg, #f5f3f3, #0c0c5b); /* White to blue gradient */
     position: fixed;
     width: 100%;
     top: 0;
@@ -15,6 +15,7 @@ body {
     z-index: 999;
     padding: 1rem 2rem;
 }
+
 
 .navbar-brand {
     font-size: 2rem;
@@ -56,7 +57,7 @@ body {
 
 .d-flex .btn {
     background-color: #ffffff;
-    color: #00004d;
+    color: #1b1b75;
 }
 
 .d-flex .btn:hover {
@@ -93,14 +94,20 @@ body {
 }
 
 .cta-button {
+    
+ 
+ position: relative;
+ width: 11%;
+ height: 42px;
     display: inline-block;
     background-color: #3498db;
-    padding: 15px 30px;
+    padding: 30px 20px;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 3rem;
     transition: background-color 0.3s ease;
+
 }
 
 .cta-button:hover {
@@ -118,7 +125,7 @@ body {
     }
 
     .cta-button {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .hero {
@@ -132,6 +139,6 @@ body {
     }
 
     .cta-button {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
